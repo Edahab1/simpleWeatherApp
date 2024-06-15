@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body class="bg-black">
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container px-5">
+        <div class="d-flex align-items-center">
+          <img class="logo" src="./images/weather logo.jpg" alt="logo" /><span
+            class="text-white fw-bold"
+            >Weather</span
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container py-5">
+        <div class="search-bar p-5">
+          <div class="mb-3 text-white position-relative">
+            <input
+              id="searchInput"
+              class="bg-black px-4 search"
+              type="text"
+              name="location"
+              placeholder="Find your location..."
+            />
+            <input type="button" value="Find" id="searchBtn" />
+          </div>
+        </div>
+        <div class="display-table mt-2 mb-4 pt-2">
+          <div class="container">
+            <div class="row weather-display g-3">
+              <div class="weather-card col-lg-4 text-center">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between">
+                    <span id="todayDay">day</span>
+                    <span id="todayDate">date</span>
+                  </div>
+                  <div class="card-body">
+                    <div id="location" class="mb-2">location...</div>
+                    <h1 id="todayDeg" class="card-title-main">degree</h1>
+                    <img id="todayIcon" class="degree-icon w-25" src="" />
+                    <div id="todayCondition" class="my-3">
+                      type ex. sunny, cloudy,...
+                    </div>
+                    <div class="percentages d-flex justify-content-center">
+                      <div>
+                        <span id="todayRain"></span>
+                        <i class="fa fa-umbrella"></i>
+                      </div>
+                      <div class="px-3">
+                        <span id="todayWind"></span>
+                        <i class="fa-solid fa-wind"></i>
+                      </div>
+                      <div>
+                        <span id="todayPressue"></span>
+                        <i class="fa-solid fa-gauge-high"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="weather-card col-lg-4">
+                <div class="card text-center">
+                  <div class="card-header d-flex justify-content-center">
+                    <span id="day2Day">day</span>
+                  </div>
+                  <div class="card-body my-5">
+                    <img id="day2Icon" class="degree-icon">
+                    <h2 id="day2DegH" class="py-2 mt-3">degree</h2>
+                    <span id="day2DegL" class="py-2">degree</span>
+                    <div id="day2Condition" class="my-3">type ex. sunny, cloudy,...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="weather-card col-lg-4">
+                  <div class="card text-center">
+                    <div class="card-header d-flex justify-content-center">
+                      <span id="day3Day">day</span>
+                    </div>
+                    <div class="card-body my-5">
+                      <img id="day3Icon" class="degree-icon">
+                      <h2 id="day3DegH" class="py-3 mt-3">degree</h2>
+                      <span id="day3DegL" class="py-3">degree</span>
+                      <div id="day3Condition" class="my-3">type ex. sunny, cloudy,...</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container px-5">
+        <div class="row pt-5">
+          <div class="col-md-8">
+            <div class="mb-3 text-white position-relative">
+              <input
+                id="subscribe"
+                class="bg-black px-4 search"
+                type="text"
+                name="subscribe"
+                placeholder="Enter your email to subscribe..."
+              />
+              <input type="button" value="subscribe" id="subscribeBtn" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <ul class="icon-links w-75 d-flex text-center justify-content-evenly">
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-white my-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

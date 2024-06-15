@@ -1,0 +1,113 @@
+.logo {
+  width: 120px;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  border: 2px solid rgb(147, 133, 199);
+  border-radius: 5px;
+  color: white;
+}
+
+.nav-link.active {
+  border: 2px solid rgb(147, 133, 199);
+  border-radius: 5px;
+}
+
+.navbar-nav li {
+  margin-inline: 20px;
+}
+
+main {
+  height: fit-content;
+  background-image: url(../images/weather\ background);
+  background-position: center;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 50px 20px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px white;
+  caret-color: white;
+  color: white;
+}
+
+input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+
+#searchBtn,
+#subscribeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+  border-radius: 30px;
+  color: white;
+  background-color: #009ad8;
+}
+
+.search {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.search::placeholder {
+  color: #ced4dacf !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  caret-color: #ced4da;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  color : white !important;
+  -webkit-text-fill-color: white !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+.card-title-main {
+  font-size: 80px;
+}
+
+.card-header{
+  background-color: #2b105d;
+}
+
+.card {
+  min-height: 415px;
+  background-color: #0000008b;
+  color: white;
+}
+
+footer {
+  background-color: #26293610;
+}
+
+.icon-links li{
+  text-decoration: none;
+  list-style: none;
+  border-radius: 50%;
+  background-color: #009ad8;
+  width: 25px;
+  height: 25px;
+}
+
+.icon-links li a{
+  color: white;
+}
+
+.icon-links li:hover{
+  background-color: #034058;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
